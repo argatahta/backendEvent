@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect('mongodb://localhost:27017/eventdb', { useMongoClient: true });
+mongoose.connect('mongodb://student:abc123@ds255787.mlab.com:55787/heroku_d869qk08', { useMongoClient: true });
 
 const Schema = mongoose.Schema;
 
@@ -12,6 +12,6 @@ const userSchema = new Schema({
     lastname:String
 });
 
-const Userdb = mongoose.model("user", userSchema);
+const Userdb = mongoose.model("user-arga", userSchema);
 
 module.exports = Userdb;

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect('mongodb://localhost:27017/eventdb', { useMongoClient: true });
+mongoose.connect('mongodb://student:abc123@ds255787.mlab.com:55787/heroku_d869qk08', { useMongoClient: true });
 
 const Schema = mongoose.Schema;
 
@@ -19,6 +19,6 @@ const eventSchema = new Schema({
     eventTopic:String
 });
 
-const Eventdb = mongoose.model("event", eventSchema);
+const Eventdb = mongoose.model("event-arga", eventSchema);
 
 module.exports = Eventdb
