@@ -55,7 +55,7 @@ module.exports = function (passport) {
                     description: req.body.description,
                     price: req.body.price,
                     contact: req.body.contact,
-                    eventPict: "https://event-project-a1191.firebaseapp.com/event/" + imageName,
+                    eventPict: "https://eventpwdk.herokuapp.com/event/" + imageName,
                     eventType: req.body.eventType,
                     eventTopic: req.body.eventTopic
                 });
